@@ -1,5 +1,5 @@
 
-# Projeto Real-Time Weather
+# Projeto Api N64
 
 O projeto Api N64 foi desenvolvido em paralelo a Maratona JS 2 promovida pelo @emersonbroga.
 
