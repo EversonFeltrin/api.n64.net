@@ -2,12 +2,14 @@
   "name": "api.n64.net",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/app.js",
   "scripts": {
+    "start": "node src/app.js",
+    "dev": "nodemon --exec node src/app.js", 
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "Everson F. Feltrin",
   "license": "ISC",
   "dependencies": {
     "cookie-parser": "^1.4.5",
