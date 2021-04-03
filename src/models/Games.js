@@ -21,14 +21,14 @@ const GameSchema = new Schema(
     }
 );
 
-const game = model('Game', GameSchema);
+const Game = model('Game', GameSchema);
 
 module.exports = {
     find: (criteria) => {
         const { q, limit, page, fields, orderBy, sortBy = 1} = criteria;
         const skip = page > 1 ? (page - 1) * limit : 0;
         
-        const query = game.find();
+        const query = Game.find();
         // search query
         if (q) {
             const regex = new RegExp(`.*${q}.*`, 'i');            
@@ -50,6 +50,17 @@ module.exports = {
         if(orderBy) query.sort({[orderBy]: sortBy});
 
         return query.exec();
+    },
+    store: (data) => {
+        const game = new Game(data);
+        return game.save();
+    }, 
+    update: (id, data, options = {new: true}) => {
+        // return old register, consider o find and after update - options resolvereturn old register, considerating the find first and after update - options resolve
+        return Game.findOneAndUpdate({ _id: id}, data, options);
+    }, 
+    destroy: (id) => {
+        return Game.deleteOne({ _id: id });
     }
 };
 
