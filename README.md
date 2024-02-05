@@ -1,28 +1,29 @@
 
-# Projeto Api N64
+# Api N64 Project
 
-O projeto Api N64 foi desenvolvido em paralelo a Maratona JS 2 promovida pelo @emersonbroga, com o objetivo de desenvolver um CRUD para jogos do Nintendo 64. Contendo informações referentes aos jogos, como títulos, outros títulos, desenvolvedores, genêros, editores, data do primeiro lançamento e dos lançamentos nos Estados Unidos, Japão e Europa.
+The Api N64 project was developed in parallel to the JS 2 Marathon promoted by @emersonbroga, with the aim of developing a CRUD for Nintendo 64 games. Containing information regarding the games, such as titles, other titles, developers, genres, publishers, release date first release and releases in the United States, Japan and Europe.
 
-## Tecnologias utilizadas
+## Technologies used
 
 - Node.js
 - MongoDB
 - Mongoose
 - Npm
 
-## Dependências
+## Dependencies
 
-O projeto possui as seguintes dependências:
+The project has the following dependencies:
 
 ```
 npm install --save dotenv mongoose express cookie-parser
 ```
 
-## Como executar este projeto
-Para rodar este projeto, basta rodar o seguinte comando:
+## How to run this project
+
+To run this project, simply run the following command:
 
 ```
 npm start
 ```
 
-O acesso para desenvolvimento pode ser efetuado através do link: http://localhost:3000/games
+Access for development can be done through the link: http://localhost:3000/games
