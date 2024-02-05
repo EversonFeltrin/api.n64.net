@@ -26,4 +26,4 @@ To run this project, simply run the following command:
 npm start
 ```
 
-Access for development can be done through the link: http://localhost:3000/games
+Access for development can be done through the link: http://localhost:3000/games 
